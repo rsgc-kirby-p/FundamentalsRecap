@@ -32,8 +32,8 @@ canvas.drawShapesWithBorders = false
 canvas.fillColor = Color(hue: 50, saturation: 100, brightness: 100, alpha: 100)
 canvas.drawRoundedRectangle(centreX: 320, centreY: 275, width: 115, height: 150)
 
-
-
+canvas.fillColor = Color(hue: 358, saturation: 100, brightness: 85, alpha: 100)
+canvas.drawEllipse(centreX: 100, centreY: 150, width: 150, height: 150)
 
 
 
