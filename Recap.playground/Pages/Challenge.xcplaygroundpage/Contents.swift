@@ -26,8 +26,9 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 400, height: 400)
+canvas.drawShapesWithBorders = false
 
-
+//drawing teh first set of circles
 for y in stride(from: 370, through: 30, by: -150){
     
 for x in stride(from: 30, through: 401, by: 55) {
@@ -42,18 +43,23 @@ canvas.drawEllipse(centreX: x, centreY: y, width: 5, height: 5)
 }
 }
 
-for h in stride(from: 320, through: 80, by: -150){
+//drawing the second ste of circles
+for h in stride(from: 320, through: 0, by: -150){
     for w in stride(from: 57.5, through: 401, by: 55) {
-        canvas.fillColor = Color(hue: 26, saturation: 69, brightness: 37, alpha: 100)
+        canvas.fillColor = Color(hue: 53, saturation: 93, brightness: 98, alpha: 100)
         canvas.drawEllipse(centreX: Int(w), centreY: h, width: 50, height: 50)
         canvas.fillColor = Color(hue: 22, saturation: 93, brightness: 90, alpha: 100)
         canvas.drawEllipse(centreX: Int(w), centreY: h, width: 35, height: 35)
-        canvas.fillColor = Color(hue: 53, saturation: 93, brightness: 98, alpha: 100)
+        canvas.fillColor = Color(hue: 26, saturation: 69, brightness: 37, alpha: 100)
         canvas.drawEllipse(centreX: Int(w), centreY: h, width: 20, height: 20)
         canvas.fillColor = Color(hue: 1, saturation: 0, brightness: 98, alpha: 100)
         canvas.drawEllipse(centreX: Int(w), centreY: h, width: 5, height: 5)
     }
 }
+
+//drawing white lines
+
+canvas.drawRoundedRectangle(centreX: 200, centreY: Int(345), width: 400, height: 50)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
